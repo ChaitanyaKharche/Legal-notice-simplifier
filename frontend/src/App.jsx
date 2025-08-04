@@ -1,15 +1,11 @@
-import { useState } from "react";
-
+import { BrowserRouter as Router } from "react-router-dom";
+import RoutesProvider from "./routes";
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
-      <div>
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-      </div>
+      <Router>
+        <RoutesProvider />
+      </Router>
     </>
   );
 }
