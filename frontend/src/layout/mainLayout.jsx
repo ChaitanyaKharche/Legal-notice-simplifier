@@ -3,9 +3,9 @@ import { Header } from "../components";
 
 export const MainLayout = () => {
   return (
-    <div>
+    <div className="bg-[#F7F8F9] h-screen">
       <Header />
-      <div className="mt-5">
+      <div>
         <Outlet />
       </div>
     </div>
